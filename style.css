@@ -1,0 +1,187 @@
+
+/* ===== General body and font styling ===== */
+body {
+  background-color: #000014;
+  color: #0ff; /* neon cyan */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading style */
+h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+  text-align: center;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+/* Space and bigger font for the "Choose number of games" text */
+body > div:first-of-type {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style points_button_group buttons as small inline boxes */
+.points_button_group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.points_button_group button {
+  width: 50px;
+  height: 50px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 2px solid #0ff; /* neon cyan border */
+  background-color: #001f2f;
+  color: #0ff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0 5px #0ff;
+}
+
+.points_button_group button:hover:not(:disabled) {
+  background-color: #0ff;
+  color: #001f2f;
+  box-shadow: 0 0 15px #0ff;
+}
+
+/* Main play screen styles */
+.main_play_screen {
+  background-color: #001122;
+  width: 90vw;
+  max-width: 700px;
+  height: 75vh;
+  border-radius: 15px;
+  box-shadow: 0 0 30px #0ff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #0ff;
+  font-weight: 600;
+  user-select: none;
+}
+
+/* Score boxes container */
+#curr_points_player, #curr_points_opponent {
+  display: inline-block;
+  width: 90px;
+  height: 50px;
+  margin: 0 10px 20px 10px;
+  background-color: #002233;
+  border: 2px solid #0ff;
+  border-radius: 8px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.25rem;
+  box-shadow: 0 0 10px #0ff;
+}
+
+/* Container to hold the score boxes inline */
+.main_play_screen > #curr_points_player,
+.main_play_screen > #curr_points_opponent {
+  display: inline-block;
+}
+
+/* Restart button on top right corner */
+#restart {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 80px;
+  height: 35px;
+  background-color: #001f2f;
+  color: #0ff;
+  border: 2px solid #0ff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 0 8px #0ff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+#restart:hover:not(:disabled) {
+  background-color: #0ff;
+  color: #001f2f;
+  box-shadow: 0 0 20px #0ff;
+}
+
+/* Visual enhancer box - opponent move display */
+#visual_enhancer {
+  width: 300px;
+  height: 300px;
+  background-color: #002233;
+  border-radius: 12px;
+  margin: 10px auto 25px auto;
+  box-shadow: 0 0 15px #0ff inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0ff;
+  user-select: none;
+}
+
+/* Waiter text - user prompt */
+#waiter {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #0ff;
+  text-shadow: 0 0 8px #0ff;
+  user-select: none;
+}
+
+/* Choices buttons container */
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Choices buttons */
+.choices button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #0ff;
+  background-color: #001f2f;
+  color: #0ff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0ff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+.choices button:hover:not(:disabled) {
+  background-color: #0ff;
+  color: #001f2f;
+  box-shadow: 0 0 25px #0ff;
+}
+
+/* Current status text */
+#curr_status {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-shadow: 0 0 10px #0ff;
+  user-select: none;
+}
+
