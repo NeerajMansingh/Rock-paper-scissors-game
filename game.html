@@ -10,18 +10,19 @@
   <h1>ROCK PAPER SCISSOR</h1>
 
   <div class="main_play_screen">
-    <div id="curr_points_player">You:</div>
-    <div id="curr_points_opponent">Robo:</div>
+    <div id="curr_points_player">You: 0</div>
+    <div id="curr_points_opponent">Robo: 0</div>
     <button id="restart" disabled>restart</button>
-    <div id="visual_enhancer"></div>
-    <div id="waiter"> Enter your choice</div>
-    <div class="choices">
-      <button id="btn_rock_pt" value="rock" disabled>rock</button>
-      <button id="btn_paper_pt" value="paper" disabled>paper</button>
-      <button id="btn_scissor_pt" value="scissor" disabled>scissor</button>
+    <div id="visual_enhancer">
+      <img id="image_opp" src="" />
     </div>
-    <div id="curr_status"></div>
+    <div id="waiter"> Enter your choice (Round 1)</div>
+    <div class="choices">
+      <button class="play_btn" value="0" disabled>rock</button>
+      <button class="play_btn" value="1" disabled>paper</button>
+      <button class="play_btn" value="2" disabled>scissor</button>
+    </div>
   </div>
-
 </body>
+<script src="index.js"></script>
 </html>
