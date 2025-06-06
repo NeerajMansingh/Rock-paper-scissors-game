@@ -1,1 +1,2 @@
-This is a rock paper scissors game, i made it just for practice.
+This is a rock paper scissors game, I made it just for practice.
+https://neerajmansingh.github.io/Rock-paper-scissors-game/
